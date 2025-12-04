@@ -9,8 +9,6 @@ Implements the clean baseline classifier for ECG5000.
 - Trains a fully-connected neural network for heartbeat classification.
 - Evaluates accuracy, precision, recall, F1, and generates confusion matrix and training-history plots.
 - Saves the trained clean model and label encoder.
-**Role in the project:** Provides the reference (non-compromised) classifier used to measure the stealthiness and accuracy impact of the backdoor attack.
-
 ---
 
 ## attack.py
@@ -22,5 +20,4 @@ Implements the trigger-based backdoor attack pipeline.
 - Fine-tunes the backdoored model with mixed clean/poisoned samples.
 - Evaluates clean accuracy, accuracy drop, and Attack Success Rate (ASR).
 - Saves results, visualizations, and backdoored models.
-**Role in the project:** Demonstrates the effectiveness and stealth of a neural backdoor attack on ECG-based classification using the same setup as the clean baseline.
 
